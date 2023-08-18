@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ .title }}</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css"/>
+</head>
+<body style="background-color: #fafafa4d">
+<style>
+    @font-face {
+        font-family: CustomFont;
+        src: url(https://js.fallsoft.cn/LXGWWenKai-Regular.ttf);
+    }
+
+    body {
+        font-family: CustomFont, sans-serif;
+
+    }
+</style>
+
+<div class="mdui-container">
+    <br/>
+    <br/>
+    <div style="padding: 50px; background: #fafafa; border-radius: 5px">
+        <h1 style="font-weight: 300;">Error : {{ .statusCode }}</h1>
+        <h3 style="font-weight: 350;">{{ .message1 }}</h3>
+        <br/>
+        <h2>什么问题?</h2>
+        <p>{{ .message2 }}</p>
+        <br/>
+        <h2>如何解决?</h2>
+        <p>{{ .message3 }}</p>
+        <br/>
+        <hr style="border-radius: 30px;border-style: dashed;"/>
+        <h4 style="font-weight: 350;">您的IP: {{ .userIp }} </h4>
+        <h5 style="font-weight: 450;">MengCDN V1.0.230726<br/>Fallsoft | Lychape</h5>
+    </div>
+</div>
+
+<!-- JavaScript -->
+<script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script>
+</body>
+</html>

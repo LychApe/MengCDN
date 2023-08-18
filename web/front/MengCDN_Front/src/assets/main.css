@@ -1,0 +1,8 @@
+@font-face {
+    font-family: CustomFont;
+    src: url(https://js.fallsoft.cn/LXGWWenKai-Regular.ttf);
+}
+
+body {
+    font-family: CustomFont, sans-serif;
+}
