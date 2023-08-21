@@ -25,6 +25,7 @@ jobs:
 
           - name: Build
             run: |
+             mkdir outputs
              go build -v ./outputs
              pwd
 
