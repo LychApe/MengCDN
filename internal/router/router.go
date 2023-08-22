@@ -203,7 +203,7 @@ func InitRouter() {
 	})
 
 	router.NoRoute(func(c *gin.Context) {
-		c.Redirect(302, "/browseGH")
+		c.Redirect(http.StatusFound, "/browseGH")
 	})
 
 	err := router.Run(":8001")
