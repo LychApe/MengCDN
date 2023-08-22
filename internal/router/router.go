@@ -202,5 +202,13 @@ func InitRouter() {
 		})
 	})
 
-	router.Run(":8001")
+	router.NoRoute(func(c *gin.Context) {
+		c.Redirect(301, "/browseGH/")
+	})
+
+	err := router.Run(":8001")
+	if err != nil {
+		return
+	}
+
 }
