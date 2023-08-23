@@ -26,11 +26,11 @@ jobs:
           - name: Build
             run: |
              mkdir outputs
-             go build -v . -o main
+             go build -v .
              pwd
 
           - name: Archive production artifacts
             uses: actions/upload-artifact@v1
             with:
                 name: MengCDN
-                path: /home/runner/work/MengCDN/MengCDN/main
+                path: /home/runner/work/MengCDN/MengCDN/MengCDN
