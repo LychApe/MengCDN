@@ -14,7 +14,7 @@ func NpmProxy(c *gin.Context) {
 		npmVersion := c.Param("version")
 		npmPath := c.Param("path")
 		//eg1:https://unpkg.com/react@16.7.0/umd/react.production.min.js
-		target := "unpkg.com"
+		target := "unpkg.cnsw.eu.org"
 		npmProxyPath := "/" + npmPackage + "@" + npmVersion + "/" + npmPath
 
 		var whiteListSW = GetWLSWC("Npm")

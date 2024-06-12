@@ -19,7 +19,7 @@ func GithubProxy(c *gin.Context) {
 		path := strings.TrimRight(c.Param("path"), "/")
 		//path := c.Param("path")
 		githubProxyPath := "/" + owner + "/" + repo + "/" + branch + path
-		target := "raw.githubusercontent.com"
+		target := "gh.cnsw.eu.org"
 
 		var whiteListSW = GetWLSWC("Github")
 

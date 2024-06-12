@@ -14,7 +14,7 @@ func WpProxyTh(c *gin.Context) {
 		wpVersion := c.Param("version")
 		wpPath := c.Param("path")
 		//eg1:https://themes.svn.wordpress.org/2012-underscores/1.4/
-		target := "themes.svn.wordpress.org"
+		target := "themes.wordpress.cnsw.eu.org"
 		wpProxyPath := "/" + wpPackage + "/" + wpVersion + "/" + wpPath
 
 		var whiteListSW = GetWLSWC("WPth")
@@ -111,7 +111,7 @@ func WpProxyPl(c *gin.Context) {
 		wpPackage := c.Param("package")
 		wpPath := c.Param("path")
 		//eg1:https://plugins.svn.wordpress.org/365projectorg-widget/
-		target := "plugins.svn.wordpress.org"
+		target := "plugins.wordpress.cnsw.eu.org"
 		wpProxyPath := "/" + wpPackage + "/" + wpPath
 
 		var whiteListSW = GetWLSWC("WPpl")
